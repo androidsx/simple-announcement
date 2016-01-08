@@ -1,0 +1,13 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <!-- The labels for the big buttons in the lower panel in the main screen -->
+    <style name="PromotionAppLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/button_panel_background</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+</resources>

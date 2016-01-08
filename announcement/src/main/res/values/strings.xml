@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Announcement</string>
+
+    <!-- Dialog full screen -->
+    <string name="dialog_full_screen_text_button">OK</string>
+
+    <string name="promo_warping_text_container">Helium + Video Effects</string>
+    <string name="promo_warping_text_button">Get our new funny app</string>
+    <string name="promo_warping_market_url">https://play.google.com/store/apps/details?id=com.androidsx.heliumvideochanger.warping&amp;referrer=utm_source%3Dhelium%26utm_medium%3Ddeepcrosspromotion%26utm_campaign%3Dbabyimage</string>
+    <string name="promo_warping_dialog_with_effects_market_url">https://play.google.com/store/apps/details?id=com.androidsx.heliumvideochanger.warping&amp;referrer=utm_source%3Dhelium%26utm_medium%3Ddeepcrosspromotion%26utm_campaign%3Ddialogvideowitheffects</string>
+
+    <string name="promo_vintage_text_container">Retro Camera</string>
+    <string name="promo_vintage_text_button">Get our polaroid app</string>
+    <string name="promo_vintage_market_url">https://play.google.com/store/apps/details?id=com.androidsx.heliumvideochanger.vintage&amp;referrer=utm_source%3Dhelium%26utm_medium%3Ddeepcrosspromotion%26utm_campaign%3Dbabyimage</string>
+
+</resources>

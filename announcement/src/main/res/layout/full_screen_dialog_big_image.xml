@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#FFF">
+    
+    <ImageButton
+        android:id="@+id/dialog_full_screen_close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_close_dialog_full_screen"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/dialog_full_screen_button_close_margin"
+        android:layout_marginRight="@dimen/dialog_full_screen_button_close_margin" />
+
+    <ImageView
+        android:id="@+id/icon_dialog_full_screen"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:padding="@dimen/dialog_full_screen_padding"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/message_dialog_full_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0"
+        android:textSize="@dimen/dialog_full_screen_text_size"
+        android:layout_marginBottom="@dimen/dialog_full_screen_text_view_margin_bottom"
+        android:padding="@dimen/dialog_full_screen_text_view_padding" />
+    
+    <Button
+        android:id="@+id/dialog_full_screen_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/dialog_full_screen_button_min_width"
+        android:background="@drawable/dialog_full_screen_button"
+        android:text="@string/dialog_full_screen_text_button"
+        android:layout_gravity="center"
+        android:padding="@dimen/dialog_full_screen_padding"
+        android:textSize="@dimen/dialog_full_screen_text_size"
+        android:layout_marginBottom="@dimen/dialog_full_screen_button_margin_bottom" />
+    
+</LinearLayout>
