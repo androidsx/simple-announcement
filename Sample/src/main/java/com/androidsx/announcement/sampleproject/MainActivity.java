@@ -51,7 +51,12 @@ public class MainActivity extends ActionBarActivity {
     public void launchPushAnnouncement(View v) {
         String pushId = pushIdEditText.getText().toString();
         if (!"".equals(pushId)) {
-            AnnouncementManager.with(this).fetch().launchPushAnnouncement(pushId);
+            Announcement push = AnnouncementManager.with(this).fetch().getPushAnnouncementFromId(pushId);
+            if (push != null) {
+                AnnouncementManager.with(this).fetch().launchPushAnnouncementIfApply(pushId);
+            } else {
+                Toast.makeText(this, "Push '" + pushId + "' not exists!\nCheck it!", Toast.LENGTH_SHORT).show();
+            }
         } else {
             Toast.makeText(this, "Please, introduce a Push Id!", Toast.LENGTH_SHORT).show();
         }
