@@ -48,7 +48,7 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void launchPushNotification(View v) {
+    public void launchPushAnnouncement(View v) {
         String pushId = pushIdEditText.getText().toString();
         if (!"".equals(pushId)) {
             AnnouncementManager.with(this).fetch().launchPushAnnouncement(pushId);
@@ -57,7 +57,7 @@ public class MainActivity extends ActionBarActivity {
         }
     }
 
-    public void launchDialog(View v) {
+    public void launchDialogAnnouncement(View v) {
         String dialogId = dialogIdEditText.getText().toString();
         if (!"".equals(dialogId)) {
             Announcement dialog = AnnouncementManager.with(this).fetch().getDialogAnnouncementFromId(dialogId);

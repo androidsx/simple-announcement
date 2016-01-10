@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="Launch Push"
-                android:onClick="launchPushNotification"/>
+                android:onClick="launchPushAnnouncement"/>
         </LinearLayout>
 
         <LinearLayout
@@ -53,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="Launch Dialog"
-                android:onClick="launchDialog"/>
+                android:onClick="launchDialogAnnouncement"/>
         </LinearLayout>
 
     </LinearLayout>

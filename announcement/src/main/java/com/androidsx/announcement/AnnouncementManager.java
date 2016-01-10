@@ -310,7 +310,7 @@ public class AnnouncementManager {
         }
     }
 
-    public void launchPushAnnouncement(String id) {
+    public void launchPushAnnouncementIfApply(String id) {
         if (!announcementsMap.isEmpty() && announcementsMap.containsKey(AnnouncementParams.PUSHES)) {
             Log.v(TAG, "Announcements Pushes: " + announcementsMap.get(AnnouncementParams.PUSHES).size());
             for (Announcement a : announcementsMap.get(AnnouncementParams.PUSHES)) {

@@ -61,7 +61,7 @@ public class AnnouncementService extends IntentService {
                 AnnouncementManager.with(this).fetch(intent.getStringExtra(EXTRA_FETCH_URL), false, intent.getBooleanExtra(EXTRA_FETCH_FORCE_REQUEST, false));
             } else if (intent.hasExtra(EXTRA_LAUNCH_PUSH) && intent.hasExtra(EXTRA_LAUNCH_PUSH_ID)) {
                 Log.v(TAG, "LaunchPush " + intent.getStringExtra(EXTRA_LAUNCH_PUSH_ID));
-                AnnouncementManager.with(this).fetch().launchPushAnnouncement(intent.getStringExtra(EXTRA_LAUNCH_PUSH_ID));
+                AnnouncementManager.with(this).fetch().launchPushAnnouncementIfApply(intent.getStringExtra(EXTRA_LAUNCH_PUSH_ID));
             }
         }
     }
